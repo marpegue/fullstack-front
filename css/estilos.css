@@ -1,0 +1,52 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1{
+    text-shadow: -2px 2px 4px rgba(0, 0, 0, 0.5),
+                2px -2px 0 rgba(255, 255, 255, 0.9);
+    display: inline-block;
+}
+.cabecera{
+    margin: 20px;
+    text-transform: uppercase;
+}
+.datos_cliente{
+    background-color: #55ccff;
+}
+.datos_pedido{
+    background-color: #40ccbb;
+}
+div{
+    display: block;
+    margin: 5px;
+}
+div label, div input{
+    display: inline-block;
+}
+.datos_cliente div label{
+    width: 15%;
+}
+input, textarea{
+    border: 1px lightgray;
+}
+button{
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    background-color: white;
+    font-size: 15px;
+    transition-duration: 0.4s;
+    margin-left: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+button:hover{
+    background-color: lightgray;
+    text-shadow: -2px 2px 4px rgba(0, 0, 0, 0.5),
+                2px -2px 0 rgba(255, 255, 255, 0.9);
+}
+#enviar:hover{
+    background-color: lightgreen;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/estilos.css" rel="stylesheet" type="text/css">
+    <title>Pizza Full Stack Release</title>
+</head>
+<body>
+    <div class="cabecera">
+        <img src="images/logoPizza.png" alt="Logo Pizzas Full Stack" width="250" height="150">
+        <h1>Pizzas Full Stack</h1>
+    </div>
+    <form method="POST" action="http://localhost:5000/pizza">
+        <div class="datos_cliente">
+            <h2 title="Se van a cumplimentar datos del cliente">Datos del cliente</h2>
+            <div>
+                <label for="nombre">Nombre: </label>
+                <input type="text" id="nombre" name="nombre">
+            </div>
+            <div>
+                <label for="apellidos">Apellidos: </label>
+                <input type="text" id="apellidos" name="apellidos">
+            </div>
+            <div>
+                <label for="fechaNac">Fecha de nacimiento: </label>
+                <input type="date" id="fechaNac" name="fechaNac">
+            </div>
+            <div>
+                <label for="numTelf">Número de teléfono: </label>
+                <input type="tel" id="numTelf" name="numTelf">
+            </div>
+            <div>
+                <label for="codPostal">Dirección postal: </label>
+                <textarea name="codPostal" id="codPostal" cols="30" rows="5"></textarea>
+            </div>
+        </div>
+        <div class="datos_pedido">
+            <h2 title="Se van a cumplimentar datos del pedido">Datos del pedido</h2>
+            <div>
+                <label for="tam">Tamaño de la pizza: </label>
+                <select name="tam" id="tam">
+                    <option value="pequeña">Pequeña</option>
+                    <option value="mediana" selected>Mediana</option>
+                    <option value="grande">Grande</option>
+                </select>
+            </div>
+            <div>
+                <label>Marcar ingredientes deseados:</label><br>
+                <input type="checkbox" name="jamon" id="jamon"><label for="jamon">Jamón York</label><br>
+                <input type="checkbox" name="champinyones" id="champinyones"><label for="champinyones">Champiñones</label><br>
+                <input type="checkbox" name="pepperoni" id="pepperoni"><label for="pepperoni">Pepperoni</label><br>
+                <input type="checkbox" name="aceitunas" id="aceitunas"><label for="aceitunas">Aceitunas.</label><br>
+            </div>
+        </div>
+        <br>
+        <button type="reset">Limpiar formulario</button>
+        <button type="submit" id="enviar">Enviar</button>
+
+    </form>
+</body>
+</html>
